@@ -1,0 +1,36 @@
+
+* {
+    background: #293038;
+    color:white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ensure html and body take up the full height of the viewport */
+html, body {
+    height: 100%;
+
+}
+
+/* Container for sidebar and main content */
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+    min-width: 250px;
+    max-width: 350px;
+    border-right: 1px solid #959CA3; /* Желтое подчеркивание снизу */
+}
+
+/* Main content styling */
+.content {
+    padding:20px;
+}
+
+/* Optional: Styling for the entire body */
+body {
+    font-family: Arial, sans-serif;
+}

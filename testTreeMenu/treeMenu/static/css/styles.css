@@ -1,0 +1,54 @@
+.tree_menu_level {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.tree_menu_level_elements {
+    position: relative;
+    padding-left: 20px;
+}
+.tree_menu_level_elements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 100%;
+    background-color: #959CA3;
+}
+
+.item {
+  font-family: 'Arial', sans-serif; /* Замените на любой другой шрифт по вашему выбору */
+  font-size: 17px; /* Размер шрифта можно настроить по своему вкусу */
+  height:20px;
+  text-decoration: none; /* Убирает подчеркивание ссылки */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Легкая тень для лучшей читаемости */
+  padding: 1px 3px;
+  margin: 10px 10px 0px 10px ; /* Отступы для улучшения внешнего вида */
+  display: inline-block; /* Сделать элемент блочным, чтобы padding работал корректно */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
+  color: #BFC8D4; /* Легкий эффект при наведении (можно заменить на другой цвет) */
+}
+
+/* Стиль для ссылки с id active */
+#active {
+  color: white; /* Цвет текста */
+  border-bottom: 1.2px solid #D4C148; /* Желтое подчеркивание снизу */
+
+}
+/* Добавим эффект при наведении */
+.item:hover {
+  color: white; /* Цвет текста для активного состояния */
+}
+
+.tree_menu{
+    position: relative;
+    height:100%;
+    padding:20px 15px;
+}
+
+.tree_menu_title{
+    margin: 10px 0px 0px 10px;
+
+    color: #D4C148;
+}

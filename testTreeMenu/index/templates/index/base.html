@@ -1,0 +1,25 @@
+{% load menu_tags %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{% static 'css/index_styles.css' %}"  rel="stylesheet"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            {% draw_menu  'main_menu' %}
+        </div>
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

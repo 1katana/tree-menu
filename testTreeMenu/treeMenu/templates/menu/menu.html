@@ -1,0 +1,18 @@
+<ul class="tree_menu_level">
+    {% for item in items %}
+        <li class="tree_menu_level_elements">
+
+                {% if item.get_absolute_url == current_url %}
+                    {% include 'menu/menu_children.html' with item=item active=1 %}
+
+
+
+                {% else %}
+                    {% include 'menu/menu_children.html' with item=item active=0 %}
+                {% endif %}
+            {% if item.children.exists %}
+                {% include 'menu/menu.html' with items=item.children.all %}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
